@@ -15,16 +15,7 @@ static const int extrabar           = 1;        /* 0 means no extra bar */
 static const char statussep         = ';';      /* separator between statuses */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#282a36";
-static const char col_gray2[]       = "#ffb86c";
-static const char col_gray3[]       = "#ff79c6";
-static const char col_gray4[]       = "#ffb86c";
-static const char col_cyan[]        = "#282a36";
-static const char *colors[][3]      = {
-    /*               fg         bg         border   */
-    [SchemeNorm] = { col_gray3, col_gray1, col_cyan },
-    [SchemeSel]  = { col_gray4, col_cyan,  col_gray2  },
-};
+#include "/home/<USER>/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -67,7 +58,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", norm_bg, "-nf", norm_fg, "-sb", sel_bg, "-sf", sel_fg, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
