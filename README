@@ -2,6 +2,20 @@ dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+Customizations
+--------------
+The following patches have been applied to this build:
+(See dwm.suckless.org/patches for more info)
+
+- vanitygaps
+- swallow
+- scratchpad
+- restartsig
+- extrabar
+
+ModKey has been changed to the Super-Key. All other bindings can be reviewed
+in config.def.h
+
 
 Requirements
 ------------
