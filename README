@@ -16,10 +16,6 @@ The following patches have been applied to this build:
 ModKey has been changed to the Super-Key. All other bindings can be reviewed
 in config.def.h
 
-Pywal support
--------------
-This build has been modified to be used with pywal 
-(See https://github.com/dylanaraps/pywal for more info)
 
 Requirements
 ------------
