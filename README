@@ -21,6 +21,7 @@ Requirements
 ------------
 In order to build dwm you need the Xlib header files.
 
+To use the calculator command bc must be installed.
 
 Installation
 ------------
