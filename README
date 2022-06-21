@@ -7,7 +7,6 @@ Customizations
 The following patches have been applied to this build:
 (See dwm.suckless.org/patches for more info)
 
-- vanitygaps
 - swallow
 - scratchpad
 - restartsig
