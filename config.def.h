@@ -10,14 +10,16 @@ static const int extrabar           = 1;        /* 0 means no extra bar */
 static const char statussep         = ';';      /* separator between statuses */
 static const char *fonts[]          = { "monospace:size=10", "JetBrainsMono Nerd Font:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_black[]       = "#000000";
-static const char col_gray[]        = "#444444";
-static const char col_white[]       = "#ffffff";
-static const char col_blue[]        = "#0000ff";
+static const char black[]           = "#091833";
+static const char blue[]            = "#133e7c";
+static const char cyan[]            = "#0abdc6";
+static const char pink[]            = "#ea00d9";
+static const char magenta[]         = "#711c91";
+static const char white[]           = "#ffffff";
 static const char *colors[][3]      = {
-    /*               fg         bg         border   */
-    [SchemeNorm] = { col_white, col_black, col_black },
-    [SchemeSel]  = { col_white, col_blue,  col_blue  },
+    /*               fg     bg     border   */
+    [SchemeNorm] = { pink,  black, cyan },
+    [SchemeSel]  = { black, cyan, pink  },
 };
 
 /* tagging */
@@ -61,7 +63,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_black, "-nf", col_white, "-sb", col_blue, "-sf", col_white, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn",dmenufont, "-nb", black, "-nf", pink, "-sb", cyan, "-sf", black, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "calculator";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-f", "monospace:size=16", "-g", "50x20", "-e",  "bc", "-ql", NULL };
